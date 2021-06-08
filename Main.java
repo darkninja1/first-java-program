@@ -1,31 +1,12 @@
-//In initialization code:
-import javax.swing.*;     
-    //Create the radio buttons.
-    JRadioButton birdButton = new JRadioButton(birdString);
-    birdButton.setMnemonic(KeyEvent.VK_B);
-    birdButton.setActionCommand("pic1");
-    birdButton.setSelected(true);
-
-    JRadioButton catButton = new JRadioButton(catString);
-    catButton.setMnemonic(KeyEvent.VK_C);
-    catButton.setActionCommand("pic2");
-
-    JRadioButton dogButton = new JRadioButton(dogString);
-    dogButton.setMnemonic(KeyEvent.VK_D);
-    dogButton.setActionCommand("pic3");
-
-
-    //Group the radio buttons.
-    ButtonGroup group = new ButtonGroup();
-    group.add(birdButton);
-    group.add(catButton);
-    group.add(dogButton);
-
-    //Register a listener for the radio buttons.
-    birdButton.addActionListener(this);
-    catButton.addActionListener(this);
-    dogButton.addActionListener(this);
-
-public void actionPerformed(ActionEvent e) {
-    picture.setIcon(new ImageIcon("images/" + e.getActionCommand() + ".jpg"));
-}
+import javax.swing.*;    
+public class ButtonExample {  
+public static void main(String[] args) {  
+    JFrame f=new JFrame("Button Example");  
+    JButton b=new JButton("Click Here");  
+    b.setBounds(50,100,95,30);  
+    f.add(b);  
+    f.setSize(400,400);  
+    f.setLayout(null);  
+    f.setVisible(true);   
+}  
+}  
