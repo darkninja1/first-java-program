@@ -1,5 +1,5 @@
 //In initialization code:
-
+import javax.swing.*;     
     //Create the radio buttons.
     JRadioButton birdButton = new JRadioButton(birdString);
     birdButton.setMnemonic(KeyEvent.VK_B);
